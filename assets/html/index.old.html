@@ -7,18 +7,9 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-		<link rel="icon" type="image/png" href="https://www.johnymuffin.com/assets/images/avatar-128x128.png">
+		<link rel="icon" type="image/png" href="/images/compass.png">
 
-		<title>JohnyMuffin - Legacy Tracker</title>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113881540-4"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-113881540-4');
-		</script>
+		<title>Minetrack</title>
 
 	</head>
 
@@ -34,18 +25,18 @@
 
 					<div class="column" style="padding: 20px;">
 
-						<img src="https://www.johnymuffin.com/assets/images/avatar-128x128.png" width="28" height="28" style="display: inline-block; margin-right: 5px;">
-						<h1 style="display: inline-block;" class="text-uppercase">JohnyMuffin - Legacy Tracker</h1>
-						<p class="subslogan text-uppercase">Tracking <span id="stat_totalPlayers">0</span> players on <span id="stat_networks">0</span> Beta and Alpha servers.</p>
+						<img src="/images/compass.png" width="28" height="28" style="display: inline-block; margin-right: 5px;">
+						<h1 style="display: inline-block;" class="text-uppercase">Minetrack</h1>
+						<p class="subslogan text-uppercase">Watching <span id="stat_totalPlayers">0</span> players on <span id="stat_networks">0</span> networks.</p>
 
 					</div>
-<!--
+
 					<div id="mojang-status-list" class="column" style="float: right;">
 
 						<div class="mojang-status" title="Sessions" id="mojang-status_Sessions"><i class="fa fa-gamepad"></i><br /><strong>Sessions</strong><p class="mojang-status-text" id="mojang-status-text_Sessions">...</p></div><div class="mojang-status" title="Skins" id="mojang-status_Skins"><i class="fa fa-user"></i><br /><strong>Skins</strong><p class="mojang-status-text" id="mojang-status-text_Skins">...</p></div><div class="mojang-status" title="Auth" id="mojang-status_Auth"><i class="fa fa-key"></i><br /><strong>Auth</strong><p class="mojang-status-text" id="mojang-status-text_Auth">...</p></div><div class="mojang-status" title="API" id="mojang-status_API"><i class="fa fa-wrench"></i><br /><strong>API</strong><p class="mojang-status-text" id="mojang-status-text_API">...</p></div>
 
 					</div>
-//-->
+
 				</div>
 
 			</div>
@@ -85,7 +76,11 @@
 
         </div>
 
+        <div id="footer">
 
+			<span style="padding-left: 20px;">Made with <span style="color: #e74c3c;">&#9829;</span> by <a href="http://cryptkpr.me">Cryptkeeper</a>. Source code available on <a href="https://github.com/Cryptkeeper/Minetrack"><i class="fa fa-github"></i> Github</a>. Older individual server records may not be reflected due to tracking behavior.</span>
+
+		</div>
 
         <!-- External JS assets -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -100,15 +95,12 @@
 		<script src="publicConfig.json"></script>
 
 		<script>
-
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-113881540-4', 'auto');
+			ga('create', 'UA-60103580-2', 'auto');
 			ga('send', 'pageview');
-
 		</script>
 
 	</body>

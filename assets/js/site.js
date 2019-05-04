@@ -413,14 +413,14 @@ $(document).ready(function() {
                 class: 'server',
                 'server-id': safeNameCopy,
                 html: '<div id="server-' + safeNameCopy + '" class="column" style="width: 80px;">\
-                            <img id="favicon_' + safeNameCopy + '" title="' + info.name + '\n' + info.ip + printPort(info.port) + '">\
+                            <img id="favicon_' + safeNameCopy + '" title="' + info.name + '\n' + '">\
                             <br />\
                             <p class="text-center-align rank" id="ranking_' + safeNameCopy + '"></p>\
                         </div>\
                         <div class="column" style="width: 220px;">\
                             <h3>' + info.name + '&nbsp;' + typeString + '</h3>\
                             <span id="status_' + safeNameCopy + '">Waiting</span>\
-                            <div id="version_' + safeNameCopy + '" class="color-dark-gray server-meta versions"><span class="version"></span></div>\
+                            <div <span class="version"></span></div>\
                             <span id="record_' + safeNameCopy + '" class="color-dark-gray server-meta"></span>\
                         </div>\
                         <div class="column" style="float: right;">\

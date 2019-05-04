@@ -1,14 +1,44 @@
 [
 	{
-		"name": "Hypixel",
-		"ip": "mc.hypixel.net",
+		"name": "Retromc",
+		"ip": "https://api.retrominecraft.com/johnymuffin/retromc.json",
 		"type": "PC",
+		"color":"#00ffe9",
 		"category": "minigames"
 	},
 	{
-		"name": "HiveMC",
-		"ip": "play.hivemc.com",
+		"name": "Betalands",
+		"ip": "https://api.retrominecraft.com/johnymuffin/betalands.json",
 		"type": "PC",
+		"color":"#ff00f6",
+		"category": "minigames"
+	},
+	{
+		"name": "Puucraft",
+		"ip": "https://api.retrominecraft.com/johnymuffin/puucraft.json",
+		"type": "PC",
+		"color":"#1dff00",
+		"category": "minigames"
+	},
+	{
+		"name": "Rubeta",
+		"ip": "https://node.johnymuffin.com/request/rubeta",
+		"type": "PC",
+		"color":"#045FB4",
+		"category": "minigames"
+	},
+	{
+		"name": "AetherMP",
+		"ip": "https://node.johnymuffin.com/request/AetherMP",
+		"type": "PC",
+		"color":"#D61D00",
+		"category": "minigames"
+	},
+	{
+		"name": "Ausbeta",
+		"ip": "https://node.johnymuffin.com/request/ausbeta",
+		"type": "PC",
+		"color":"#f2930e",
 		"category": "minigames"
 	}
 ]

@@ -10,7 +10,7 @@ var smallChartOptions = {
         show: false
     },
     yaxis: {
-        minTickSize: 75,
+        minTickSize: 30,
         tickDecimals: 0,
         show: true,
         tickLength: 10,
@@ -44,7 +44,7 @@ var bigChartOptions = {
     },
     yaxis: {
         show: true,
-        tickSize: 2000,
+        tickSize: 30,
         tickLength: 10,
         tickFormatter: function(value) {
             return formatNumber(value);
