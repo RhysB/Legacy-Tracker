@@ -76,7 +76,7 @@ function updateServerStatus(lastEntry) {
     $("#stat_networks").text(formatNumber(keys.length));
 
     if (lastEntry.record) {
-        $('#record_' + safeName(info.name)).html('Average: ' + formatNumber(lastEntry.record));
+        $('#record_' + safeName(info.name)).html('Average: ' + formatNumber(lastEntry.record.toFixed(2)));
     }
 
     updatePercentageBar();
