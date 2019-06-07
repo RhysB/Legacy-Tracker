@@ -48,6 +48,12 @@
 		],
 		"PE": [
 			0
+		],
+		"JSON": [
+			0
+		],
+		"DYNMAP": [
+			0
 		]
 	},
 	"categoriesVisible": true,

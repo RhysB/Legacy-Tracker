@@ -2,70 +2,70 @@
 	{
 		"name": "Retromc",
 		"ip": "https://node.johnymuffin.com/request/retromc",
-		"type": "PC",
+		"type": "JSON",
 		"color":"#00ffe9",
 		"category": "minigames"
 	},
 	{
 		"name": "Betalands",
-		"ip": "http://old.host.johnymuffin.com/johnymuffin/betalands.json",
-		"type": "PC",
+		"ip": "http://198.245.62.12:8123/up/world/world/744",
+		"type": "DYNMAP",
 		"color":"#ff00f6",
 		"category": "minigames"
 	},
 	{
 		"name": "Puucraft",
-		"ip": "http://old.host.johnymuffin.com/johnymuffin/puucraft.json",
-		"type": "PC",
+		"ip": "http://beta.puucraft.net:8125/up/world/world/744",
+		"type": "DYNMAP",
 		"color":"#1dff00",
 		"category": "minigames"
 	},
 	{
 		"name": "Rubeta",
 		"ip": "https://node.johnymuffin.com/request/rubeta",
-		"type": "PC",
+		"type": "JSON",
 		"color":"#045FB4",
 		"category": "minigames"
 	},
 	{
 		"name": "AetherMP",
 		"ip": "https://node.johnymuffin.com/request/AetherMP",
-		"type": "PC",
+		"type": "JSON",
 		"color":"#D61D00",
 		"category": "minigames"
 	},
 	{
 		"name": "Ausbeta",
 		"ip": "https://node.johnymuffin.com/request/ausbeta",
-		"type": "PC",
+		"type": "JSON",
 		"color":"#f2930e",
 		"category": "minigames"
 	},
 	{
 		"name": "Back To Beta",
 		"ip": "https://node.johnymuffin.com/request/backtobeta",
-		"type": "PC",
+		"type": "JSON",
 		"color":"#a36208",
 		"category": "minigames"
 	},
 	{
 		"name": "Alpha Place",
 		"ip": "https://node.johnymuffin.com/request/alphaplace",
-		"type": "PC",
+		"type": "JSON",
 		"color":"#ba0000",
 		"category": "minigames"
 	},
 	{
 		"name": "Always Alpha Whitelisted",
 		"ip": "https://node.johnymuffin.com/request/alwaysalpha",
-		"type": "PC",
+		"type": "JSON",
 		"color":"#edd209",
 		"category": "minigames"
 	},
 	{
 		"name": "Always Alpha",
 		"ip": "https://node.johnymuffin.com/request/alwaysalpha2",
-		"type": "PC",
+		"type": "JSON",
 		"color":"#edd209",
 		"category": "minigames"
 	}

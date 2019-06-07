@@ -77,6 +77,7 @@ function updateServerStatus(lastEntry) {
 
     if (lastEntry.record) {
         $('#record_' + safeName(info.name)).html('Average: ' + formatNumber(lastEntry.record.toFixed(2)));
+        console.log("Server: " + info.name + " Average: " + lastEntry.record)
     }
 
     updatePercentageBar();
