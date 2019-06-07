@@ -11,9 +11,14 @@
 		"Retromc": "http://johnymuffin.com/BetaTracker/retrolands.png",
 		"Betalands": "http://johnymuffin.com/BetaTracker/betalands.png",
 		"Puucraft": "http://johnymuffin.com/BetaTracker/puucraft.png",
-		"Rubeta": "https://cdn.discordapp.com/attachments/528357225346105355/572350339701932043/rubeta.png",
+		"Rubeta": "http://api.johnymuffin.com/rubeta.png",
+		"Back To Beta": "https://api.johnymuffin.com/b2blogo.png",
+		"Alpha Place": "https://api.johnymuffin.com/alphaplace.png",
 		"AetherMP": "https://johnymuffin.com/BetaTracker/athermp.png",
+		"Always Alpha Whitelisted": "https://api.johnymuffin.com/AlwaysAlpha.png",
+		"Always Alpha": "https://api.johnymuffin.com/AlwaysAlpha.png",
 		"Ausbeta": "https://johnymuffin.com/BetaTracker/ausbeta.png"
+		
 
 	},
 	"site": {

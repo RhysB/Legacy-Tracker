@@ -1,21 +1,21 @@
 [
 	{
 		"name": "Retromc",
-		"ip": "https://api.retrominecraft.com/johnymuffin/retromc.json",
+		"ip": "https://node.johnymuffin.com/request/retromc",
 		"type": "PC",
 		"color":"#00ffe9",
 		"category": "minigames"
 	},
 	{
 		"name": "Betalands",
-		"ip": "https://api.retrominecraft.com/johnymuffin/betalands.json",
+		"ip": "http://old.host.johnymuffin.com/johnymuffin/betalands.json",
 		"type": "PC",
 		"color":"#ff00f6",
 		"category": "minigames"
 	},
 	{
 		"name": "Puucraft",
-		"ip": "https://api.retrominecraft.com/johnymuffin/puucraft.json",
+		"ip": "http://old.host.johnymuffin.com/johnymuffin/puucraft.json",
 		"type": "PC",
 		"color":"#1dff00",
 		"category": "minigames"
@@ -39,6 +39,34 @@
 		"ip": "https://node.johnymuffin.com/request/ausbeta",
 		"type": "PC",
 		"color":"#f2930e",
+		"category": "minigames"
+	},
+	{
+		"name": "Back To Beta",
+		"ip": "https://node.johnymuffin.com/request/backtobeta",
+		"type": "PC",
+		"color":"#a36208",
+		"category": "minigames"
+	},
+	{
+		"name": "Alpha Place",
+		"ip": "https://node.johnymuffin.com/request/alphaplace",
+		"type": "PC",
+		"color":"#ba0000",
+		"category": "minigames"
+	},
+	{
+		"name": "Always Alpha Whitelisted",
+		"ip": "https://node.johnymuffin.com/request/alwaysalpha",
+		"type": "PC",
+		"color":"#edd209",
+		"category": "minigames"
+	},
+	{
+		"name": "Always Alpha",
+		"ip": "https://node.johnymuffin.com/request/alwaysalpha2",
+		"type": "PC",
+		"color":"#edd209",
 		"category": "minigames"
 	}
 ]
