@@ -2,115 +2,132 @@
 
 <html>
 
-	<head>
+<head>
 
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-		<link rel="icon" type="image/png" href="https://www.johnymuffin.com/assets/images/avatar-128x128.png">
+	<link rel="icon" type="image/png" href="https://www.johnymuffin.com/assets/images/avatar-128x128.png">
 
-		<title>JohnyMuffin - Legacy Tracker</title>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113881540-4"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+	<title>JohnyMuffin - Legacy Tracker</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113881540-4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-		  gtag('config', 'UA-113881540-4');
-		</script>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 
-	</head>
+		gtag('config', 'UA-113881540-4');
+	</script>
 
-	<body>
+</head>
 
-		<div id="tooltip"></div>
+<body>
 
-		<div id="push">
+	<div id="tooltip"></div>
 
-			<div id="header">
+	<div id="push">
 
-				<div id="header-wrapper">
+		<div id="header">
 
-					<div class="column" style="padding: 20px;">
+			<div id="header-wrapper">
 
-						<img src="https://www.johnymuffin.com/assets/images/avatar-128x128.png" width="28" height="28" style="display: inline-block; margin-right: 5px;">
-						<h1 style="display: inline-block;" class="text-uppercase">JohnyMuffin - Legacy Tracker</h1>
-						<p class="subslogan text-uppercase">Tracking <span id="stat_totalPlayers">0</span> players on <span id="stat_networks">0</span> Beta and Alpha servers.</p>
+				<div class="column" style="padding: 20px;">
 
-					</div>
-<!--
+					<img src="https://www.johnymuffin.com/assets/images/avatar-128x128.png" width="28" height="28"
+						style="display: inline-block; margin-right: 5px;">
+					<h1 style="display: inline-block;" class="text-uppercase">JohnyMuffin - Legacy Tracker</h1>
+					<p class="subslogan text-uppercase">Tracking <span id="stat_totalPlayers">0</span> players on <span
+							id="stat_networks">0</span> Beta and Alpha servers.</p>
+
+				</div>
+				<!--
 					<div id="mojang-status-list" class="column" style="float: right;">
 
 						<div class="mojang-status" title="Sessions" id="mojang-status_Sessions"><i class="fa fa-gamepad"></i><br /><strong>Sessions</strong><p class="mojang-status-text" id="mojang-status-text_Sessions">...</p></div><div class="mojang-status" title="Skins" id="mojang-status_Skins"><i class="fa fa-user"></i><br /><strong>Skins</strong><p class="mojang-status-text" id="mojang-status-text_Skins">...</p></div><div class="mojang-status" title="Auth" id="mojang-status_Auth"><i class="fa fa-key"></i><br /><strong>Auth</strong><p class="mojang-status-text" id="mojang-status-text_Auth">...</p></div><div class="mojang-status" title="API" id="mojang-status_API"><i class="fa fa-wrench"></i><br /><strong>API</strong><p class="mojang-status-text" id="mojang-status-text_API">...</p></div>
 
 					</div>
 //-->
-				</div>
-
 			</div>
 
-			<div id="perc-bar"></div>
+		</div>
 
-			<div id="tagline-text">Connecting...</div>
+		<div id="perc-bar"></div>
 
-			<div id="big-graph"></div>
+		<div id="tagline-text">Connecting...</div>
 
-			<div id="big-graph-controls" style="display: none;">
+		<div id="big-graph"></div>
 
-				<span style="text-align: center; display: block;">
+		<div id="big-graph-controls" style="display: none;">
 
-					<a onclick="toggleControlsDrawer();">Click to toggle graph controls</a>
+			<span style="text-align: center; display: block;">
+
+				<a onclick="toggleControlsDrawer();">Click to toggle graph controls</a>
+
+			</span>
+
+			<div id="big-graph-controls-drawer" style="display: none;">
+
+				<div id="big-graph-checkboxes"></div>
+
+				<br />
+
+				<span style="text-align: center; display: block; margin-bottom: 15px;">
+
+					<span onclick="setAllGraphVisibility(true);" class="button">Show All</span>
+					<span onclick="setAllGraphVisibility(false);" class="button">Hide All</span>
 
 				</span>
 
-				<div id="big-graph-controls-drawer" style="display: none;">
-
-					<div id="big-graph-checkboxes"></div>
-
-					<br />
-
-					<span style="text-align: center; display: block; margin-bottom: 15px;">
-
-						<span onclick="setAllGraphVisibility(true);" class="button">Show All</span>
-						<span onclick="setAllGraphVisibility(false);" class="button">Hide All</span>
-
-					</span>
-
-				</div>
-
 			</div>
 
-			<div id="server-container-list"></div>
+		</div>
 
-        </div>
+		<div id="server-container-list"></div>
+
+	</div>
+	
+	<div id="footer">
+
+		<span style="padding-left: 20px;">Forked by <a
+				href="https://www.johnymuffin.com">Johny Muffin</a>. Source code available on <a
+				href="https://gitlab.johnymuffin.com/JohnyMuffin/Legacy-Tracker"> Gitlab</a>. Average is still in testing and results may not be full accurate yet.</span>
+
+	</div>
 
 
+	<!-- External JS assets -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.7/socket.io.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min.js"></script>
 
-        <!-- External JS assets -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.7/socket.io.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min.js"></script>
+	<!-- Internal JS assets -->
+	<script src="js/util.js"></script>
+	<script src="js/graph.js"></script>
+	<script src="js/site.js"></script>
 
-        <!-- Internal JS assets -->
-        <script src="js/util.js"></script>
-        <script src="js/graph.js"></script>
-		<script src="js/site.js"></script>
+	<script src="publicConfig.json"></script>
 
-		<script src="publicConfig.json"></script>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-		<script>
+		ga('create', 'UA-113881540-4', 'auto');
+		ga('send', 'pageview');
+	</script>
 
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-113881540-4', 'auto');
-			ga('send', 'pageview');
-
-		</script>
-
-	</body>
+</body>
 
 </html>
