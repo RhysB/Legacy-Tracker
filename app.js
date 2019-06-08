@@ -110,25 +110,17 @@ function handlePing(network, res, err, attemptedVersion) {
 		// Validate that we have logToDatabase enabled otherwise in memory pings
 		// will create a record that's only valid for the runtime duration.
 
-		//if (config.logToDatabase && res.players.online > highestPlayerCount[network.ip]) {
-		//	highestPlayerCount[network.ip] = res.players.online;
-		//}
+		if (config.logToDatabase && res.players.online > highestPlayerCount[network.ip]) {
+			highestPlayerCount[network.ip] = res.players.online;
+		}
 
 		//Not gonna lie, i don't understand how to use SqLite but its not crashing so :)
-		db.getTotalRecord(network.ip, function (record) {
-			logger.log('info', 'Completed query for %s', network.ip);
-
-			highestPlayerCount[network.ip] = record;
-			//console.log("Data For: " + network.ip + " " + highestPlayerCount[network.ip])
-			server.io.sockets.emit('update', networkSnapshot);
-		});
 
 		//Averages 
 		db.getAverage(network.ip, function (record) {
 			logger.log('info', 'Completed query for %s', network.ip);
 
 			averages[network.ip] = record;
-			console.log("Data For: " + network.ip + " " + averages[network.ip])
 			server.io.sockets.emit('update', networkSnapshot);
 		});
 
