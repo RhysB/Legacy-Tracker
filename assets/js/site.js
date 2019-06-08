@@ -76,8 +76,13 @@ function updateServerStatus(lastEntry) {
     $("#stat_networks").text(formatNumber(keys.length));
 
     if (lastEntry.record) {
-        $('#record_' + safeName(info.name)).html('Average: ' + formatNumber(lastEntry.record.toFixed(2)));
-        console.log("Server: " + info.name + " Average: " + lastEntry.record)
+        $('#record_' + safeName(info.name)).html('Record: ' + formatNumber(lastEntry.record));
+        $('#average_' + safeName(info.name)).html('Average: ' + formatNumber(lastEntry.average.toFixed(2)) );
+        console.log("-------------------------")
+        console.log(info.name)
+        console.log(lastEntry)
+        console.log("-------------------------" + "\n\n\n\n")
+        //console.log("Server: " + info.name + " Average: " + lastEntry.record)
     }
 
     updatePercentageBar();
@@ -423,6 +428,7 @@ $(document).ready(function() {
                             <h3>' + info.name + '&nbsp;' + typeString + '</h3>\
                             <span id="status_' + safeNameCopy + '">Waiting</span>\
                             <div <span class="version"></span></div>\
+                            <div id="average_' + safeNameCopy + '" class="color-dark-gray server-meta"></span></div>\
                             <span id="record_' + safeNameCopy + '" class="color-dark-gray server-meta"></span>\
                         </div>\
                         <div class="column" style="float: right;">\

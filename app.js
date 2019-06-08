@@ -20,19 +20,20 @@ var networkVersions = [];
 
 var graphData = [];
 var highestPlayerCount = {};
+var averages = {};
 var lastGraphPush = [];
 
 function pingAll() {
 	for (var i = 0; i < servers.length; i++) {
 		// Make sure we lock our scope.
-		(function(network) {
+		(function (network) {
 			// Asign auto generated color if not present
 			if (!network.color) {
 				network.color = util.stringToColor(network.name);
 			}
 
 			var attemptedVersion = config.versions[network.type][currentVersionIndex[network.type]];
-			ping.ping(network.ip, network.port, network.type, config.rates.connectTimeout, function(err, res) {
+			ping.ping(network.ip, network.port, network.type, config.rates.connectTimeout, function (err, res) {
 				// Handle our ping results, if it succeeded.
 				if (err) {
 					logger.log('error', 'Failed to ping ' + network.ip + ': ' + err.message);
@@ -99,6 +100,7 @@ function handlePing(network, res, err, attemptedVersion) {
 			type: network.type
 		},
 		versions: _networkVersions,
+		average: averages[network.ip],
 		record: highestPlayerCount[network.ip]
 	};
 
@@ -107,35 +109,44 @@ function handlePing(network, res, err, attemptedVersion) {
 
 		// Validate that we have logToDatabase enabled otherwise in memory pings
 		// will create a record that's only valid for the runtime duration.
-		
+
 		//if (config.logToDatabase && res.players.online > highestPlayerCount[network.ip]) {
 		//	highestPlayerCount[network.ip] = res.players.online;
 		//}
-	
+
 		//Not gonna lie, i don't understand how to use SqLite but its not crashing so :)
-		db.getTotalRecord(network.ip, function(record) {
-			logger.log('info', 'Completed query for %s', server.ip);
+		db.getTotalRecord(network.ip, function (record) {
+			logger.log('info', 'Completed query for %s', network.ip);
 
 			highestPlayerCount[network.ip] = record;
 			//console.log("Data For: " + network.ip + " " + highestPlayerCount[network.ip])
 			server.io.sockets.emit('update', networkSnapshot);
 		});
-		
+
+		//Averages 
+		db.getAverage(network.ip, function (record) {
+			logger.log('info', 'Completed query for %s', network.ip);
+
+			averages[network.ip] = record;
+			console.log("Data For: " + network.ip + " " + averages[network.ip])
+			server.io.sockets.emit('update', networkSnapshot);
+		});
+
 	} else if (err) {
 		networkSnapshot.error = err;
 	}
-    
+
 	//  server.io.sockets.emit('update', networkSnapshot);
 
 	var _networkHistory = networkHistory[network.name];
 
 	// Remove our previous data that we don't need anymore.
 	for (var i = 0; i < _networkHistory.length; i++) {
-        delete _networkHistory[i].info;
+		delete _networkHistory[i].info;
 
-        if (_networkHistory[i].result) {
-        	delete _networkHistory[i].result.favicon;
-        }
+		if (_networkHistory[i].result) {
+			delete _networkHistory[i].result.favicon;
+		}
 	}
 
 	_networkHistory.push({
@@ -143,12 +154,12 @@ function handlePing(network, res, err, attemptedVersion) {
 		result: res,
 		versions: _networkVersions,
 		timestamp: util.getCurrentTimeMs(),
-        info: {
-            ip: network.ip,
-            port: network.port,
-            type: network.type,
-            name: network.name
-        }
+		info: {
+			ip: network.ip,
+			port: network.port,
+			type: network.type,
+			name: network.name
+		}
 	});
 
 	// Make sure we never log too much.
@@ -195,7 +206,7 @@ function handlePing(network, res, err, attemptedVersion) {
 function startMainLoop() {
 	util.setIntervalNoDelay(pingAll, config.rates.pingAll);
 
-	util.setIntervalNoDelay(function() {
+	util.setIntervalNoDelay(function () {
 		mojang.update(config.rates.mojangStatusTimeout);
 
 		server.io.sockets.emit('updateMojangServices', mojang.toMessage());
@@ -206,7 +217,7 @@ function startServices() {
 	server.start();
 
 	// Track how many people are currently connected.
-	server.io.on('connect', function(client) {
+	server.io.on('connect', function (client) {
 		// We're good to connect them!
 		connectedClients += 1;
 
@@ -217,20 +228,20 @@ function startServices() {
 		client.emit('bootTime', util.getBootTime());
 
 		// Attach our listeners.
-		client.on('disconnect', function() {
+		client.on('disconnect', function () {
 			connectedClients -= 1;
 
 			logger.log('info', '%s disconnected, total clients: %d', client.request.connection.remoteAddress, connectedClients);
 		});
 
-		client.on('requestHistoryGraph', function() {
+		client.on('requestHistoryGraph', function () {
 			if (config.logToDatabase) {
 				// Send them the big 24h graph.
 				client.emit('historyGraph', graphData);
 			}
 		});
 
-		client.on('requestListing', function() {
+		client.on('requestListing', function () {
 			// Send them our previous data, so they have somewhere to start.
 			client.emit('updateMojangServices', mojang.toMessage());
 
@@ -245,19 +256,21 @@ function startServices() {
 
 				if (!(server.name in networkHistory) || networkHistory[server.name].length < 1) {
 					// This server hasn't been ping'd yet. Send a hacky placeholder.
-					client.emit('add', [[{
-						error: {
-							description: 'Waiting'
-						},
-						result: null,
-						timestamp: util.getCurrentTimeMs(),
-						info: {
-							ip: server.ip,
-							port: server.port,
-							type: server.type,
-							name: server.name
-						}
-					}]]);
+					client.emit('add', [
+						[{
+							error: {
+								description: 'Waiting'
+							},
+							result: null,
+							timestamp: util.getCurrentTimeMs(),
+							info: {
+								ip: server.ip,
+								port: server.port,
+								type: server.type,
+								name: server.name
+							}
+						}]
+					]);
 				} else {
 					client.emit('add', [networkHistory[networkHistoryKeys[i]]]);
 				}
@@ -278,15 +291,15 @@ if (config.logToDatabase) {
 
 	var timestamp = util.getCurrentTimeMs();
 
-	db.queryPings(config.graphDuration, function(data) {
+	db.queryPings(config.graphDuration, function (data) {
 		graphData = util.convertServerHistory(data);
 		completedQueries = 0;
 
 		logger.log('info', 'Queried and parsed ping history in %sms', util.getCurrentTimeMs() - timestamp);
 
 		for (var i = 0; i < servers.length; i++) {
-			(function(server) {
-				db.getTotalRecord(server.ip, function(record) {
+			(function (server) {
+				db.getTotalRecord(server.ip, function (record) {
 					logger.log('info', 'Completed query for %s', server.ip);
 
 					highestPlayerCount[server.ip] = record;
@@ -294,9 +307,25 @@ if (config.logToDatabase) {
 					completedQueries += 1;
 
 					if (completedQueries === servers.length) {
-						startServices();
+						//completedQueries = 0;
+
+						//Get Averages
+						db.getAverage(server.ip, function (record) {
+							logger.log('info', 'Completed query for %s', server.ip);
+		
+							averages[server.ip] = record;
+		
+							//completedQueries += 1;
+		
+							//if (completedQueries === servers.length) {
+								startServices();
+							//}
+						});
+
 					}
 				});
+				
+
 			})(servers[i]);
 		}
 	});
