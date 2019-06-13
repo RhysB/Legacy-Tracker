@@ -9,6 +9,7 @@
     "mc-ping-updated": "0.1.0",
     "mcpe-ping-fixed": "0.0.3",
     "mime": "^1.3.4",
+    "mysql": "^2.17.1",
     "nexmo": "^2.4.1",
     "node-pre-gyp": "^0.13.0",
     "request": "^2.74.0",
