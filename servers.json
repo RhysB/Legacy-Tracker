@@ -7,10 +7,31 @@
 		"category": "minigames"
 	},
 	{
-		"name": "Betalands",
-		"ip": "http://198.245.62.12:8123/up/world/world/744",
-		"type": "DYNMAP",
+		"name": "Betalands - Towny",
+		"ip": "https://node.johnymuffin.com/request/betalands",
+		"type": "JSON",
 		"color":"#ff00f6",
+		"category": "minigames"
+	},
+	{
+		"name": "Iceberg Craft",
+		"ip": "http://node.johnymuffin.com/request/icebergcraft",
+		"type": "JSON",
+		"color":"#005cf2",
+		"category": "minigames"
+	},
+	{
+		"name": "Betalands - Anarchy",
+		"ip": "https://node.johnymuffin.com/request/betalands2",
+		"type": "JSON",
+		"color":"#ff0087",
+		"category": "minigames"
+	},
+	{
+		"name": "BetaMC",
+		"ip": "http://mc.gamecu.be:8123/up/world/world/744",
+		"type": "DYNMAP",
+		"color":"#8c2b8a",
 		"category": "minigames"
 	},
 	{
@@ -42,24 +63,10 @@
 		"category": "minigames"
 	},
 	{
-		"name": "Back To Beta",
-		"ip": "https://node.johnymuffin.com/request/backtobeta",
-		"type": "JSON",
-		"color":"#a36208",
-		"category": "minigames"
-	},
-	{
 		"name": "Alpha Place",
 		"ip": "https://node.johnymuffin.com/request/alphaplace",
 		"type": "JSON",
 		"color":"#ba0000",
-		"category": "minigames"
-	},
-	{
-		"name": "Always Alpha Whitelisted",
-		"ip": "https://node.johnymuffin.com/request/alwaysalpha",
-		"type": "JSON",
-		"color":"#edd209",
 		"category": "minigames"
 	},
 	{

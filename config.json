@@ -9,14 +9,17 @@
 	},
 	"faviconOverride": {
 		"Retromc": "http://johnymuffin.com/BetaTracker/retrolands.png",
-		"Betalands": "http://johnymuffin.com/BetaTracker/betalands.png",
+		"Betalands - Towny": "http://johnymuffin.com/BetaTracker/betalands.png",
+		"Betalands - Anarchy": "http://johnymuffin.com/BetaTracker/betalands.png",
 		"Puucraft": "http://johnymuffin.com/BetaTracker/puucraft.png",
 		"Rubeta": "http://api.johnymuffin.com/rubeta.png",
 		"Back To Beta": "https://api.johnymuffin.com/b2blogo.png",
 		"Alpha Place": "https://api.johnymuffin.com/alphaplace.png",
+		"BetaMC": "http://api.johnymuffin.com/BetaMC.png",
 		"AetherMP": "https://johnymuffin.com/BetaTracker/athermp.png",
 		"Always Alpha Whitelisted": "https://api.johnymuffin.com/AlwaysAlpha.png",
 		"Always Alpha": "https://api.johnymuffin.com/AlwaysAlpha.png",
+		"Iceberg Craft": "https://icebergcraft.com/favicon.ico",
 		"Ausbeta": "https://johnymuffin.com/BetaTracker/ausbeta.png"
 		
 
@@ -28,11 +31,11 @@
 	"rates": {
 		"upateMojangStatus": 216000,
 		"mojangStatusTimeout": 216000,
-		"pingAll": 60000,
+		"pingAll": 15000,
 		"connectTimeout": 2500
 	},
 	"logToDatabase": true,
-	"graphDuration": 86400000,
+	"graphDuration": 172800000,
 	"serverCategories": {
 	},
 	"versions": {
