@@ -38,6 +38,7 @@
 	"graphDuration": 172800000,
 	"AverageDuration": 2592000000,
 	"RecordDuration": 5184000000,
+	"ClearRecordAfter": 1000,
 	"serverCategories": {
 	},
 	"versions": {
