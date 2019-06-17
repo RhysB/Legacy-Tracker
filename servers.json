@@ -1,8 +1,8 @@
 [
 	{
 		"name": "Retromc",
-		"ip": "https://node.johnymuffin.com/request/retromc",
-		"type": "JSON",
+		"ip": "mc.retromc.org:25566",
+		"type": "MINEQUERY",
 		"color":"#00ffe9",
 		"category": "minigames"
 	},
