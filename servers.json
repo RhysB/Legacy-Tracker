@@ -1,14 +1,35 @@
 [
 	{
 		"name": "Retromc",
-		"ip": "mc.retromc.org:25566",
-		"type": "MINEQUERY",
+		"ip": "https://node.johnymuffin.com/request/retromc",
+		"type": "JSON",
 		"color":"#00ffe9",
 		"category": "minigames"
 	},
 	{
 		"name": "Betalands - Towny",
 		"ip": "https://node.johnymuffin.com/request/betalands",
+		"type": "JSON",
+		"color":"#ff00f6",
+		"category": "minigames"
+	},
+	{
+		"name": "Betalands - Anarchy",
+		"ip": "http://node.johnymuffin.com/request/betalandsanarchy",
+		"type": "JSON",
+		"color":"#ff00f6",
+		"category": "minigames"
+	},
+	{
+		"name": "Old Haven",
+		"ip": "http://node.johnymuffin.com/request/oldhaven2",
+		"type": "JSON",
+		"color":"#00FF00",
+		"category": "minigames"
+	},
+	{
+		"name": "BasCraft",
+		"ip": "http://node.johnymuffin.com/request/bascraft",
 		"type": "JSON",
 		"color":"#ff00f6",
 		"category": "minigames"
@@ -21,29 +42,8 @@
 		"category": "minigames"
 	},
 	{
-		"name": "Betalands - Anarchy",
-		"ip": "https://node.johnymuffin.com/request/betalands2",
-		"type": "JSON",
-		"color":"#ff0087",
-		"category": "minigames"
-	},
-	{
-		"name": "BetaMC",
-		"ip": "http://mc.gamecu.be:8123/up/world/world/744",
-		"type": "DYNMAP",
-		"color":"#8c2b8a",
-		"category": "minigames"
-	},
-	{
-		"name": "Puucraft",
-		"ip": "http://beta.puucraft.net:8125/up/world/world/744",
-		"type": "DYNMAP",
-		"color":"#1dff00",
-		"category": "minigames"
-	},
-	{
-		"name": "Rubeta",
-		"ip": "https://node.johnymuffin.com/request/rubeta",
+		"name": "New Frontier Craft",
+		"ip": "https://node.johnymuffin.com/request/NFC",
 		"type": "JSON",
 		"color":"#045FB4",
 		"category": "minigames"
@@ -67,6 +67,20 @@
 		"ip": "https://node.johnymuffin.com/request/alphaplace",
 		"type": "JSON",
 		"color":"#ba0000",
+		"category": "minigames"
+	},
+	{
+		"name": "Retro Lands - TEMP",
+		"ip": "https://node.johnymuffin.com/request/retrolandsmodern",
+		"type": "JSON",
+		"color":"#00ffe9",
+		"category": "minigames"
+	},
+	{
+		"name": "Puucraft",
+		"ip": "https://betadynmap.puucraft.net/standalone/dynmap_world.json",
+		"type": "DYNMAP",
+		"color":"#b5cf59",
 		"category": "minigames"
 	},
 	{
