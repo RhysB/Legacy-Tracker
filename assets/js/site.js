@@ -76,8 +76,9 @@ function updateServerStatus(lastEntry) {
     $("#stat_networks").text(formatNumber(keys.length));
 
     if (lastEntry.record) {
-        $('#record_' + safeName(info.name)).html('Record: ' + formatNumber(lastEntry.record));
+        //$('#record_' + safeName(info.name)).html('Record: ' + formatNumber(lastEntry.record));
         $('#average_' + safeName(info.name)).html('Average: ' + formatNumber(lastEntry.average.toFixed(2)) );
+        //$('#average_' + safeName(info.name)).html('Average: Temporarily Disabled');
         console.log("-------------------------")
         console.log(info.name)
         console.log(lastEntry)

@@ -9,9 +9,11 @@
 	},
 	"faviconOverride": {
 		"Retromc": "https://johnymuffin.com/BetaTracker/retrolands.png",
-		"Betalands - Towny": "https://www.betalands.com/icon.png",
-		"Betalands - Anarchy": "https://www.betalands.com/icon.png",
+		"Betarius": "https://i.imgur.com/12DREZA.jpg",
+		"Gravel Beach": "https://i.imgur.com/jUgkpY1.png",
+		"Betalands": "https://i.imgur.com/iwfbjNM.png",
 		"BetaWorld": "https://i.imgur.com/qyAjRPK.png",
+		"Betachy": "https://i.imgur.com/y1mfTmn.png",
 		"Puucraft": "https://johnymuffin.com/BetaTracker/puucraft.png",
 		"Rubeta": "https://api.johnymuffin.com/rubeta.png",
 		"Back To Beta": "https://api.johnymuffin.com/b2blogo.png",
@@ -19,19 +21,26 @@
 		"Old Haven": "https://i.imgur.com/vwmfkrT.png",
 		"BetaMC": "https://api.johnymuffin.com/BetaMC.png",
 		"Retro Lands - TEMP": "https://i.imgur.com/DtCBVYT.png",
-		"BasCraft": "https://i.imgur.com/QNvS8Cj.png",
-		"AetherMP": "https://i.imgur.com/UXJroWD.png",
+		"BasCraft": "https://i.imgur.com/zQBEhR0.png",
+		"AetherMP": "https://i.imgur.com/I3Kwe1R.png",
 		"Always Alpha Whitelisted": "https://api.johnymuffin.com/AlwaysAlpha.png",
 		"New Frontier Craft": "https://media.discordapp.net/attachments/450065333659893771/603745908114325514/AGF-l7-NwllrLo9lAWytksgc5x9QJXFBrxqztjKjCQs288-c-k-c0xffffffff-no-rj-mo.jpg",
 		"Always Alpha": "https://api.johnymuffin.com/AlwaysAlpha.png",
 		"Iceberg Craft": "https://icebergcraft.com/favicon.ico",
+		"MCLegacy": "https://i.imgur.com/NH7Ak9u.png",
+		"Betacraft": "https://i.imgur.com/uxr58m4.png",
 		"Beta Factions": "https://i.imgur.com/1XZuerA.png",
+		"BetaBlocks": "https://i.imgur.com/g9lriYB.png",
+		"Rubeta": "https://i.imgur.com/vjGyWjf.png",
+		"Old School Minecraft": "https://i.imgur.com/6z6NcJL.jpg",
+		"2Beta2T": "https://i.imgur.com/fYPcXJZ.png",
+
 		"Ausbeta": "https://johnymuffin.com/BetaTracker/ausbeta.png"
 		
 
 	},
 	"site": {
-		"port": 8051,
+		"port": 8052,
 		"ip": "0.0.0.0"
 	},
 	"rates": {
@@ -73,6 +82,6 @@
 			0
 		]
 	},
-	"categoriesVisible": true,
+	"categoriesVisible": false,
 	"serverTypesVisible": true
 }

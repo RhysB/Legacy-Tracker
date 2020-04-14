@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "get-json": "^1.0.1",
+    "hashmap": "^2.4.0",
     "install": "^0.12.2",
     "mc-ping-updated": "0.1.0",
     "mcpe-ping-fixed": "0.0.3",

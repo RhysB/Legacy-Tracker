@@ -7,15 +7,8 @@
 		"category": "minigames"
 	},
 	{
-		"name": "Betalands - Towny",
-		"ip": "https://node.johnymuffin.com/request/betalands",
-		"type": "JSON",
-		"color":"#ff00f6",
-		"category": "minigames"
-	},
-	{
-		"name": "Betalands - Anarchy",
-		"ip": "http://node.johnymuffin.com/request/betalandsanarchy",
+		"name": "Betalands",
+		"ip": "https://node.johnymuffin.com/request/gravelbeach/",
 		"type": "JSON",
 		"color":"#ff00f6",
 		"category": "minigames"
@@ -27,30 +20,74 @@
 		"color":"#00FF00",
 		"category": "minigames"
 	},
+
 	{
-		"name": "BasCraft",
-		"ip": "http://node.johnymuffin.com/request/bascraft",
+		"name": "Old School Minecraft",
+		"ip": "https://node.johnymuffin.com/request/oldschoolminecraft",
 		"type": "JSON",
-		"color":"#ff00f6",
+		"color":"#00FF00",
+		"category": "minigames"
+	},
+
+	{
+		"name": "2Beta2T",
+		"ip": "https://node.johnymuffin.com/request/2beta2t",
+		"type": "JSON",
+		"color":"#5C23FF",
+		"category": "minigames"
+	},
+
+
+	{
+		"name": "Rubeta",
+		"ip": "https://node.johnymuffin.com/request/rubeta",
+		"type": "JSON",
+		"color":"#0320fc",
+		"category": "minigames"
+	},
+
+	{
+		"name": "Betarius",
+		"ip": "https://node.johnymuffin.com/request/betarius",
+		"type": "JSON",
+		"color":"#ffa600",
+		"category": "minigames"
+	},
+
+
+
+
+	{
+		"name": "Betacraft",
+		"ip": "https://node.johnymuffin.com/request/betacraft",
+		"type": "JSON",
+		"color":"#6600ff",
 		"category": "minigames"
 	},
 	{
-		"name": "Iceberg Craft",
-		"ip": "http://node.johnymuffin.com/request/icebergcraft",
+		"name": "BetaBlocks",
+		"ip": "http://node.johnymuffin.com/request/betablocks",
 		"type": "JSON",
-		"color":"#005cf2",
+		"color":"#00AAFF",
 		"category": "minigames"
 	},
 	{
 		"name": "New Frontier Craft",
-		"ip": "https://node.johnymuffin.com/request/NFC",
+		"ip": "https://node.johnymuffin.com/request/nfc",
+		"type": "JSON",
+		"color":"#045FB4",
+		"category": "minigames"
+	},
+	{
+		"name": "MCLegacy",
+		"ip": "http://node.johnymuffin.com/request/mclegacy",
 		"type": "JSON",
 		"color":"#045FB4",
 		"category": "minigames"
 	},
 	{
 		"name": "AetherMP",
-		"ip": "https://node.johnymuffin.com/request/AetherMP",
+		"ip": "https://node.johnymuffin.com/request/aethermp",
 		"type": "JSON",
 		"color":"#D61D00",
 		"category": "minigames"
@@ -81,6 +118,13 @@
 		"ip": "https://betadynmap.puucraft.net/standalone/dynmap_world.json",
 		"type": "DYNMAP",
 		"color":"#b5cf59",
+		"category": "minigames"
+	},
+	{
+		"name": "Betachy",
+		"ip": "http://node.johnymuffin.com/request/betachy",
+		"type": "JSON",
+		"color":"#ff4400",
 		"category": "minigames"
 	},
 	{
