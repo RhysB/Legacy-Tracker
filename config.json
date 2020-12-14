@@ -1,87 +1,87 @@
 {
-	"routes": {
-		"/": "assets/html/index.html",
-		"/images/compass.png": "assets/images/compass.png",
-		"/js/site.js": "assets/js/site.js",
-		"/js/util.js": "assets/js/util.js",
-		"/js/graph.js": "assets/js/graph.js",
-		"/css/main.css": "assets/css/main.css"
-	},
-	"faviconOverride": {
-		"Retromc": "https://johnymuffin.com/BetaTracker/retrolands.png",
-		"Betarius": "https://i.imgur.com/12DREZA.jpg",
-		"Gravel Beach": "https://i.imgur.com/jUgkpY1.png",
-		"Betalands": "https://i.imgur.com/iwfbjNM.png",
-		"BetaWorld": "https://i.imgur.com/qyAjRPK.png",
-		"Betachy": "https://i.imgur.com/y1mfTmn.png",
-		"Puucraft": "https://johnymuffin.com/BetaTracker/puucraft.png",
-		"Rubeta": "https://api.johnymuffin.com/rubeta.png",
-		"Back To Beta": "https://api.johnymuffin.com/b2blogo.png",
-		"Alpha Place": "https://api.johnymuffin.com/alphaplace.png",
-		"Old Haven": "https://i.imgur.com/vwmfkrT.png",
-		"BetaMC": "https://api.johnymuffin.com/BetaMC.png",
-		"Retro Lands - TEMP": "https://i.imgur.com/DtCBVYT.png",
-		"BasCraft": "https://i.imgur.com/zQBEhR0.png",
-		"AetherMP": "https://i.imgur.com/I3Kwe1R.png",
-		"Always Alpha Whitelisted": "https://api.johnymuffin.com/AlwaysAlpha.png",
-		"New Frontier Craft": "https://media.discordapp.net/attachments/450065333659893771/603745908114325514/AGF-l7-NwllrLo9lAWytksgc5x9QJXFBrxqztjKjCQs288-c-k-c0xffffffff-no-rj-mo.jpg",
-		"Always Alpha": "https://api.johnymuffin.com/AlwaysAlpha.png",
-		"Iceberg Craft": "https://icebergcraft.com/favicon.ico",
-		"MCLegacy": "https://i.imgur.com/NH7Ak9u.png",
-		"Betacraft": "https://i.imgur.com/uxr58m4.png",
-		"Beta Factions": "https://i.imgur.com/1XZuerA.png",
-		"BetaBlocks": "https://i.imgur.com/g9lriYB.png",
-		"Rubeta": "https://i.imgur.com/vjGyWjf.png",
-		"Old School Minecraft": "https://i.imgur.com/6z6NcJL.jpg",
-		"2Beta2T": "https://i.imgur.com/fYPcXJZ.png",
-
-		"Ausbeta": "https://johnymuffin.com/BetaTracker/ausbeta.png"
-		
-
-	},
-	"site": {
-		"port": 8052,
-		"ip": "0.0.0.0"
-	},
-	"rates": {
-		"upateMojangStatus": 216000,
-		"mojangStatusTimeout": 216000,
-		"pingAll": 15000,
-		"connectTimeout": 2500
-	},
-	"logToDatabase": true,
-	"graphDuration": 172800000,
-	"AverageDuration": 7776000000,
-	"RecordDuration": 2592000000,
-	"ClearRecordAfter": 1,
-	"serverCategories": {
-	},
-	"versions": {
-		"PC": [
-			4,
-			5,
-			47,
-			107,
-			210,
-			315,
-			335,
-			393,
-			393,
-			477
-		],
-		"PE": [
-			0
-		],
-		"JSON": [
-			0
-		],
-		"MINEQUERY": [
-			0
-		],
-		"DYNMAP": [
-			0
-		]
-	},
-	"categoriesVisible": false,
-	"serverTypesVisible": true
+  "routes": {
+    "/": "assets/html/index.html",
+    "/images/compass.png": "assets/images/compass.png",
+    "/js/site.js": "assets/js/site.js",
+    "/js/util.js": "assets/js/util.js",
+    "/js/graph.js": "assets/js/graph.js",
+    "/css/main.css": "assets/css/main.css"
+  },
+  "faviconOverride": {
+    "Retromc": "https://johnymuffin.com/BetaTracker/retrolands.png",
+    "Betarius": "https://i.imgur.com/12DREZA.jpg",
+    "Gravel Beach": "https://i.imgur.com/jUgkpY1.png",
+    "Betalands": "https://i.imgur.com/iwfbjNM.png",
+    "BetaWorld": "https://i.imgur.com/qyAjRPK.png",
+    "Betachy": "https://i.imgur.com/y1mfTmn.png",
+    "Puucraft": "https://johnymuffin.com/BetaTracker/puucraft.png",
+    "Rubeta": "https://api.johnymuffin.com/rubeta.png",
+    "Back To Beta": "https://api.johnymuffin.com/b2blogo.png",
+    "Alpha Place": "https://api.johnymuffin.com/alphaplace.png",
+    "Old Haven": "https://i.imgur.com/vwmfkrT.png",
+    "BetaMC": "https://api.johnymuffin.com/BetaMC.png",
+    "Retro Lands - TEMP": "https://i.imgur.com/DtCBVYT.png",
+    "BasCraft": "https://i.imgur.com/zQBEhR0.png",
+    "AetherMP": "https://i.imgur.com/I3Kwe1R.png",
+    "Always Alpha Whitelisted": "https://api.johnymuffin.com/AlwaysAlpha.png",
+    "New Frontier Craft": "https://media.discordapp.net/attachments/450065333659893771/603745908114325514/AGF-l7-NwllrLo9lAWytksgc5x9QJXFBrxqztjKjCQs288-c-k-c0xffffffff-no-rj-mo.jpg",
+    "Always Alpha": "https://api.johnymuffin.com/AlwaysAlpha.png",
+    "Iceberg Craft": "https://icebergcraft.com/favicon.ico",
+    "MCLegacy": "https://i.imgur.com/NH7Ak9u.png",
+    "Betacraft": "https://i.imgur.com/uxr58m4.png",
+    "Beta Factions": "https://i.imgur.com/1XZuerA.png",
+    "BetaBlocks": "https://i.imgur.com/g9lriYB.png",
+    "Rubeta": "https://i.imgur.com/vjGyWjf.png",
+    "Old School Minecraft": "https://i.imgur.com/6z6NcJL.jpg",
+    "2Beta2T": "https://i.imgur.com/fYPcXJZ.png",
+    "Ausbeta": "https://johnymuffin.com/BetaTracker/ausbeta.png"
+  },
+  "site": {
+    "port": 8052,
+    "ip": "0.0.0.0"
+  },
+  "rates": {
+    "upateMojangStatus": 216000,
+    "mojangStatusTimeout": 216000,
+    "pingAll": 15000,
+    "connectTimeout": 2500
+  },
+  "logToDatabase": true,
+  "graphDuration": 172800000,
+  "AverageDuration": 7776000000,
+  "RecordDuration": 2592000000,
+  "ClearRecordAfter": 1,
+  "serverCategories": {
+  },
+  "versions": {
+    "PC": [
+      4,
+      5,
+      47,
+      107,
+      210,
+      315,
+      335,
+      393,
+      393,
+      477
+    ],
+    "PE": [
+      0
+    ],
+    "JSON": [
+      0
+    ],
+    "MINEQUERY": [
+      0
+    ],
+    "LEGACYPING1": [
+      0
+    ],
+    "DYNMAP": [
+      0
+    ]
+  },
+  "categoriesVisible": false,
+  "serverTypesVisible": true
 }
