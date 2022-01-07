@@ -116,8 +116,8 @@ function handlePing(network, res, err, attemptedVersion) {
 
 		//Not gonna lie, i don't understand how to use SqLite but its not crashing so :)
 
-		//Averages 
-		db.getAverage(network.ip, function (record) {
+		//Averages
+		db.getAverage(network.ip, network.type , function (record) {
 			logger.log('info', 'Completed query for %s', network.ip);
 
 			averages[network.ip] = record;
@@ -302,7 +302,7 @@ if (config.logToDatabase) {
 						//completedQueries = 0;
 
 						//Get Averages
-						db.getAverage(server.ip, function (record) {
+						db.getAverage(server.ip, server.type, function (record) {
 							logger.log('info', 'Completed query for %s', server.ip);
 		
 							averages[server.ip] = record;

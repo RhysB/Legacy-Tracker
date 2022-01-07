@@ -1,128 +1,51 @@
 [
   {
     "name": "Retromc",
-    "ip": "https://node.johnymuffin.com/request/retromc",
-    "type": "JSON",
+    "ip": "476197b8-904b-3f03-9db2-276372813fbc",
+    "type": "LEGACYMCAPI",
     "color": "#00ffe9",
     "category": "minigames"
   },
   {
     "name": "Betalands",
-    "ip": "https://node.johnymuffin.com/request/gravelbeach/",
-    "type": "JSON",
+    "ip": "8b386a94-23ef-396c-916e-8463f764ad77",
+    "type": "LEGACYMCAPI",
     "color": "#ff00f6",
     "category": "minigames"
   },
   {
-    "name": "Old Haven",
-    "ip": "http://node.johnymuffin.com/request/oldhaven2",
-    "type": "JSON",
-    "color": "#00FF00",
-    "category": "minigames"
-  },
-  {
     "name": "Old School Minecraft",
-    "ip": "https://node.johnymuffin.com/request/oldschoolminecraft",
-    "type": "JSON",
+    "ip": "e391569f-490c-3ca1-92bc-167084a37c44",
+    "type": "LEGACYMCAPI",
     "color": "#00FF00",
-    "category": "minigames"
-  },
-  {
-    "name": "2Beta2T",
-    "ip": "https://node.johnymuffin.com/request/2beta2t",
-    "type": "JSON",
-    "color": "#5C23FF",
     "category": "minigames"
   },
   {
     "name": "Rubeta",
-    "ip": "https://node.johnymuffin.com/request/rubeta",
-    "type": "JSON",
+    "ip": "b6dd3aac-1d82-3700-aac4-182cc90a3bf8",
+    "type": "LEGACYMCAPI",
     "color": "#0320fc",
     "category": "minigames"
   },
   {
-    "name": "Betarius",
-    "ip": "https://node.johnymuffin.com/request/betarius",
-    "type": "JSON",
-    "color": "#ffa600",
-    "category": "minigames"
-  },
-  {
-    "name": "Betacraft",
-    "ip": "https://node.johnymuffin.com/request/betacraft",
-    "type": "JSON",
+    "name": "BetaCraft",
+    "ip": "ec0088ec-581f-3e7d-ac9e-51f697f5e4bc",
+    "type": "LEGACYMCAPI",
     "color": "#6600ff",
     "category": "minigames"
   },
   {
-    "name": "BetaBlocks",
-    "ip": "http://node.johnymuffin.com/request/betablocks",
-    "type": "JSON",
-    "color": "#00AAFF",
-    "category": "minigames"
-  },
-  {
     "name": "New Frontier Craft",
-    "ip": "https://node.johnymuffin.com/request/nfc",
-    "type": "JSON",
+    "ip": "6e4052d5-f99e-3a8b-a991-56b1db056faa",
+    "type": "LEGACYMCAPI",
     "color": "#045FB4",
-    "category": "minigames"
-  },
-  {
-    "name": "MCLegacy",
-    "ip": "http://node.johnymuffin.com/request/mclegacy",
-    "type": "JSON",
-    "color": "#045FB4",
-    "category": "minigames"
-  },
-  {
-    "name": "AetherMP",
-    "ip": "https://node.johnymuffin.com/request/aethermp",
-    "type": "JSON",
-    "color": "#D61D00",
-    "category": "minigames"
-  },
-  {
-    "name": "Ausbeta",
-    "ip": "https://node.johnymuffin.com/request/ausbeta",
-    "type": "JSON",
-    "color": "#f2930e",
     "category": "minigames"
   },
   {
     "name": "Alpha Place",
-    "ip": "https://node.johnymuffin.com/request/alphaplace",
-    "type": "JSON",
+    "ip": "a50ecb70-bdab-3312-a29c-fc51b7bfc70f",
+    "type": "LEGACYMCAPI",
     "color": "#ba0000",
-    "category": "minigames"
-  },
-  {
-    "name": "Retro Lands - TEMP",
-    "ip": "https://node.johnymuffin.com/request/retrolandsmodern",
-    "type": "JSON",
-    "color": "#00ffe9",
-    "category": "minigames"
-  },
-  {
-    "name": "Puucraft",
-    "ip": "https://betadynmap.puucraft.net/standalone/dynmap_world.json",
-    "type": "DYNMAP",
-    "color": "#b5cf59",
-    "category": "minigames"
-  },
-  {
-    "name": "Betachy",
-    "ip": "http://node.johnymuffin.com/request/betachy",
-    "type": "JSON",
-    "color": "#ff4400",
-    "category": "minigames"
-  },
-  {
-    "name": "Always Alpha",
-    "ip": "https://node.johnymuffin.com/request/alwaysalpha2",
-    "type": "JSON",
-    "color": "#edd209",
     "category": "minigames"
   }
 ]
