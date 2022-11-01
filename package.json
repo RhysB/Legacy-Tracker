@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/Cryptkeeper/Minetrack#README",
   "devDependencies": {
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.2",
     "gulp-cssmin": "^0.1.7",
     "gulp-if": "^2.0.0",
     "gulp-nodemon": "^2.0.4",
